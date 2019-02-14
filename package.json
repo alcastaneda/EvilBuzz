@@ -1,0 +1,16 @@
+{
+  "name": "EvilBuzz",
+  "version": "1.0.0",
+  "description": "A small tdd exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha fizzBuzz.spec.js"
+  },
+  "author": "Kadin Van Valin",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "sinon": "^7.2.3",
+    "sinon-chai": "^3.3.0"
+  }
+}
