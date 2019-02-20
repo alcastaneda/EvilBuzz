@@ -11,13 +11,7 @@ class FizzBuzz {
     } 
 
     render() {
-        if (this.endNumber % 5 === 0 && this.endNumber % 3 === 0){
-            return 'Fizzbuzz'
-        } else if (this.endNumber % 3 === 0) {
-            return 'Fizz';
-        } else if (this.endNumber % 5 === 0) {
-            return 'Buzz';
-        }
+       
     }
 }
 
