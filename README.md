@@ -25,5 +25,4 @@ jobs:
 7. Click on `Branches` and click on `Add Rule`
 8. Add a rule to your `master` and `staging` branch
   - Click on `Require status checks to pass before merging`
-  - Click on `Require branches to be up to date before merging`
   - Click on ` ci/circleci: build`
