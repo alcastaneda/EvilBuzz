@@ -40,4 +40,33 @@ describe('FizzBuzz', () => {
         FizzBuzz.bind(FizzBuzz, "100")
         expect(() => new FizzBuzz("100")).to.throw('times is NaN')
     });
+
+    it('should render "Fizz" for numbers divisible by three', function(){
+        let num = (Math.floor(Math.random() * 100) + 1) * 3;
+        while (num % 5 === 0) {
+            num = num / 5
+        };
+        const fizz = new FizzBuzz(num)
+        expect(fizz.render()).to.equal('Fizz');
+    });
+
+    it('should render "Buzz" for numbers divisible by five', function(){
+        let num = (Math.floor(Math.random() * 100) + 1) * 5;
+        while (num % 3 === 0) {
+            num = num / 3
+        };
+        const fizz = new FizzBuzz(num)
+        expect(fizz.render()).to.equal('Buzz');
+    });
+
+    it('should render "Fizzbuzz" for numbers divisible by three and five', function(){
+        const num = (Math.floor(Math.random() * 100) + 1) * 15;
+        const fizz = new FizzBuzz(num)
+        expect(fizz.render()).to.equal('Fizzbuzz');
+    });
+
+    it('should assign this.render to this.output', function(){
+        const fizz = new FizzBuzz(1)
+        expect(fizz.getOutput).to.equal(fizz.render());
+    });
 });
