@@ -1,5 +1,5 @@
 # Circle CI
-####### Continuous integration with CircleCI
+Continuous integration with CircleCI
 
 ### Project Setup
 1. [Sign up for CircleCI](https://circleci.com/integrations/github/)
